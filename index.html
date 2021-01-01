@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Calculadora</title>
+  </head>
+  <body>
+  
+    <div class="calculadora">
+        <div >
+            <input type="text" placeholder="0" disabled id="result">
+        </div>
+        <div >
+            <div class="row">
+               <input  type="button" id="parentesis" class="grid-item " value ="(" onclick="getData(this)">
+               <input  type="button" id="porciento" class="grid-item " value=")" onclick="getData(this)">
+               <input  type="button" id="dividir" class="grid-item " value="/" onclick="getData(this)">
+               <input  type="button" id="exp" class="grid-item " value="**" onclick="getData(this)">
+            </div>
+            <div class="row">
+                <input  type="button" id="7" class="asd" value="7" onclick="getData(this)">
+                <input  type="button" id="8" class="asd" value="8" onclick="getData(this)">
+                <input  type="button" id="9" class="asd" value="9" onclick="getData(this)">
+                <input  type="button" id="mltp" class="grid-item" value="*" onclick="getData(this)">
+             </div>
+             <div class="row">
+                <input  type="button" id="4" class="asd" value="4" onclick="getData(this)">
+                <input  type="button" id="5" class="asd" value="5" onclick="getData(this)">
+                <input  type="button" id="6" class="asd" value="6" onclick="getData(this)">
+                <input  type="button" id="restar" class="grid-item" value="-" onclick="getData(this)">
+             </div>
+             <div class="row">
+                <input  type="button" id="1" class="asd" value="1" onclick="getData(this)">
+                <input  type="button" id="2" class="asd" value="2" onclick="getData(this)">
+                <input  type="button" id="3" class="asd" value="3" onclick="getData(this)">
+                <input  type="button" id="sumar" class="grid-item" value="+" onclick="getData(this)">
+             </div>
+
+             <div class="row">
+                <input  type="button" id="C" class="grid-item " value="c" onclick="borrar()">
+                <input  type="button" id="7" class="asd" value="7" onclick="getData(this)">
+                <input  type="button" id="puntuar" class="asd" value="." onclick="getData(this)">
+                <input  type="button" id="calcular" class="grid-item" value="=" onclick="calcular()">
+             </div>
+        </div>
+
+    </div>
+
+   
+
+  <!-- directirio script -->
+  
+   <script src="script/calculadora.js"></script>
+  </body>
+</html>
